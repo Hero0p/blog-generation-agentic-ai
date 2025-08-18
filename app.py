@@ -17,4 +17,6 @@ os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 async def create_blog(request: Request):
     data = await request.json()
     topic = data.get("topic" , "")
+    if not topic:
+        return {"error": "Topic is required"}
     
