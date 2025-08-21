@@ -1,10 +1,11 @@
 from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
+load_dotenv()
 
 class GroqLLM:
     def __init__(self):
-        self.load_dotenv()
+        load_dotenv()
 
         
 
@@ -16,3 +17,5 @@ class GroqLLM:
         except Exception as e:
             print(f"Error occurred while getting LLM: {e}")
             return None
+        
+        
