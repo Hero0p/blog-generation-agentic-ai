@@ -32,40 +32,6 @@ This makes it easy to generate professional blogs in seconds.
 
 ---
 
-## 📂 Project Structure
-blog-generation/
-│── .env # Environment variables (API keys, configs)
-│── .gitignore
-│── app.py # FastAPI entry point
-│── main.py # Alternative entry / test runner
-│── pyproject.toml
-│── requirements.txt
-│── request.json # Sample request body
-│── README.md
-│── uv.lock
-│
-├── src/ # Core project source code
-│ ├── graphs/ # LangGraph workflow definitions
-│ │ ├── init.py
-│ │ └── graph_builder.py
-│ │
-│ ├── llms/ # LLM integrations
-│ │ ├── init.py
-│ │ └── groqlm.py
-│ │
-│ ├── nodes/ # Agent node definitions
-│ │ ├── init.py
-│ │ └── blog_node.py
-│ │
-│ └── states/ # Workflow states
-│ ├── init.py
-│ └── blogstate.py
-│
-├── .venv/ # Virtual environment
-└── pycache/ # Cache files
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1. Clone Repository
